@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-const MainHeading = ({ text }) => {
+const MainHeading = (props: { text: string }) => {
   return (
     <View>
-      <Text style={styles.text}>{text}</Text>
+      <Text style={styles.text}>{props.text}</Text>
     </View>
   );
 };
